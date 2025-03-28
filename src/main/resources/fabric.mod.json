@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "absence",
+	"version": "${version}",
+	"name": "Absence",
+	"description": "The darkness of Divinity is your only saving grace.",
+	"authors": [
+		"Killerkrow"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/absence/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.killerkrow.absence.Absence"
+		],
+		"client": [
+			"net.killerkrow.absence.AbsenceClient"
+		],
+		"fabric-datagen": [
+			"net.killerkrow.absence.AbsenceDataGenerator"
+		]
+	},
+	"mixins": [
+		"absence.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
